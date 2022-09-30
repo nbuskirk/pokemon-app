@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="container mx-auto">
-        <p>aksjdkjsd</p>
+        <p>Home Page</p>
       </div>
     </div>
   );
