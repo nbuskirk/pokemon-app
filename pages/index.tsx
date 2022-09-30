@@ -1,8 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 // import styles from '../styles/Home.module.css';
+import PokemonList from '@components/PokemonList';
+import useGetPokemon from 'hooks/useGetPokemon';
 
 const Home: NextPage = () => {
+	const data = useGetPokemon();
+
 	return (
 		<div className='container mx-auto'>
 			<Head>
@@ -12,7 +16,7 @@ const Home: NextPage = () => {
 			</Head>
 
 			<div className='container mx-auto'>
-				<p>Home Page</p>
+				<PokemonList pokemon={data} />
 			</div>
 		</div>
 	);
