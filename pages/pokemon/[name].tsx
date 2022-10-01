@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
-const PokemonPage: NextPage = (props) => {
+const PokemonPage: NextPage = () => {
 	const [pokemon, setPokemon] = useState([]);
 	const router = useRouter();
 	useEffect(() => {
