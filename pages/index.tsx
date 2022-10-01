@@ -8,7 +8,7 @@ const Home: NextPage = () => {
 	const pokemon = useGetPokemon();
 
 	return (
-		<div className='container mx-auto'>
+		<div>
 			<Head>
 				<title>Pokemon API App</title>
 				<meta name='description' content='Pokemon API App' />
