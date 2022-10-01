@@ -1,8 +1,6 @@
 export interface IPokemonProps {
-	pokemon: TPokemon[];
+	pokemon: { name: string; url: string }[];
 }
-
-export type TPokemon = {
-	name: string;
-	url: string;
+export type PokemonListItemProps = {
+	pokemon: { name: string; url: string };
 };

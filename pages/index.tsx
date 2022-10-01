@@ -6,7 +6,6 @@ import useGetPokemon from 'hooks/useGetPokemon';
 
 const Home: NextPage = () => {
 	const pokemon = useGetPokemon();
-
 	return (
 		<div>
 			<Head>

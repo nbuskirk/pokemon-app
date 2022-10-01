@@ -1,8 +1,8 @@
-import { IPokemonProps } from 'types';
 import Link from 'next/link';
+import { FC } from 'react';
+import { PokemonListItemProps } from 'types';
 
-const PokemonListItem = (props: IPokemonProps) => {
-	const { pokemon } = props;
+const PokemonListItem: FC<PokemonListItemProps> = ({ pokemon }) => {
 	return (
 		<div>
 			<Link href={`/pokemon/${pokemon.name}`}>{pokemon.name}</Link>
