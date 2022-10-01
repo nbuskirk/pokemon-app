@@ -1,3 +1,8 @@
 export interface IPokemonProps {
-	pokemon: { name: string; url: string }[];
+	pokemon: TPokemon[];
 }
+
+export type TPokemon = {
+	name: string;
+	url: string;
+};
